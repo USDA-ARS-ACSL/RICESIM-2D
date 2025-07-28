@@ -1,0 +1,16 @@
+Modified version of rice model ORYZA v3 (2014 referred to as model_v2n14s1)
+
+Sanai Li added the following changes:
+-nonlinear T function (beta distribution) for rice development
+-coupled leaf level x stomatal conductance within energy balance gas exchange module (replaces original leaf/canopy model in ORYZA)
+-new / improved heat stress functions during pollination / grainfill
+
+-these were originally compiled under the RICESIM_2022 model
+
+Here is more detail on Sanai's work:
+
+SANAI’s VERSIONS
+-For the Gas Exchange piece,  Sanai created a new file, SPGL3.F90.  This is identical to the older file (SPGL) except she added source code to bypass the original photosynthesis methods and use the coupled gas exchange approach.  This is in lines 93 to 107.    Sanai added a switch for each of her major additions to turn off/on the new approach.  These switches were added to the crop file (*.crp).  For Gas exchange, the variable name is IACC and is either 1 or 2 for original ORYZA, or 3 for the gas exchange.  The *.crp file also includes values for Jmax, Vcmax, and TPU, and g0 and g1 that vary with developmental x-stage.   The version still uses the ORYZA original sunlit/shaded 3 layer model for scaling up to whole canopy.
+-For the nonlinear temperature piece, Sanai created a new file, SUBDDB.F90 (replaced SUBDD2).  Note that on lines 43 to 49, she had fixed the thermoperiod for SPAR chamber comparisons, this was commented out.  The new changes are to switch phenology from original approaches (SWIPHENO 1, 2 or 3) to SWIPHENO = 4 for the beta function.  This new version was tested with lots of data on rice heading dates in the U.S.  This version also effectively simulates the relative temperature, as opposed to absolute temperature in the original ORZYA, which caused reviewer concern – we really need to publish our improvements on the nonlinear response.   As with Gas exchange, the crop file (*.crp) now includes a new value for the switch, SWIPHENO = 4.
+For the spikelet heat stress changes, the new file is now SUBGRN5.F90 which actually was still in the original version.  This was modified on lines 425 through 489 to include a new switch (SWIHEAT = 4) from the *.crp file to use Sanai’s heat stress version.  (Note SWIHeat 1,2,3 are original options).  The parameters for this new heat stress, such as Tcrit and the slope of the T response, are hard coded in the model for different varieties as t the moment.
+

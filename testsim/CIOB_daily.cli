@@ -1,0 +1,12 @@
+***STANDARD METEOROLOGICAL DATA  Header fle for Test 2DRICE sim from CIOB country code/station
+Latitude Longitude
+52.85	-6.9
+DailyTbulb(1) Daily Wind(2) RainIntensity(3) DailyConc(4) Furrow(5) Rel_humid(6) CO2(7)
+0	1	0	0	0	0	0
+Parameters for changing of units:
+BSOLAR BTEMP ATEMP ERAIN BWIND BIR (BSOLAR is 1e6/3600 to go from j m-2 h-1 to wm-2)
+1000000	1	0   0.1	  1	1
+Average values for the site: may need wind column in front of IRAV if indicated in 2nd line above
+irav  dconc CO2
+4	0	400
+

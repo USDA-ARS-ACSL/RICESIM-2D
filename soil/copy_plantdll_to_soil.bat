@@ -1,0 +1,1 @@
+copy "E:\RICESIM-2D\RICESIM-2D\plant\Debug\crop.dll"  E:\RICESIM-2D\RICESIM-2D\soil\Debug

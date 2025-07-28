@@ -1,0 +1,95 @@
+*** Variety Coefficient Calibration for Test for 2DRICESIM
+CXL753
+***Phenology coefficients - cardinal temps
+TBD	TBLV	TMD	TOD	TODNGHT	TSEN	TSENNGHT TSENPSP	TSENSPNGHT		
+8.	10.	42.	30.	28.	1.	1.	 3.		1.
+***Phenology coefficients - developmental rates
+DVRJ		DVRI		DVRP		DVRR
+0.0158537	0.0158537	0.0125000	0.0250000
+***Photoperiod
+MOPP	PPSE
+10.0	0.0
+***Relationship between seedling age and delay in phenological development ; leaf area development
+SHCKD	SHCKL
+0.0	0.0
+***Cold T thresholds
+COLDMIN	COLDEAD
+12.	10.
+***Leaf and stem growth parameters and faction of stem reserves available for growth
+RGRLMX	RGRLMN	LRSTR
+0.0085	0.0040	0.947
+***Leaf photosynthetic parameters
+VCMAX	JMAX	TPU	g0	g1
+132.	145.	9.6	0.01	11.6	
+***Maintenance respiration parameters (kg ch2o kg-1 dm d-1)
+MAINLV	MAINST	MAINSO	MAINRT	TREF	Q10
+0.02	0.015	0.003	0.01	25.	2.0
+***Growth respiration parameters (kg ch2o kg-1 dm)
+CRGLV	CRGST	CRGSO	CRGRT	CRGSTR	
+1.326	1.326	1.462	1.326	1.11
+***Growth parameters
+FSTR	TCLSTR	SPGF	NSPM2X	NSJA	WRGMX	 GFRCP	WGREC
+0.20	10.	50000.	100000.	2000.	0.000025 1.0	0.0000250
+***Carbon balance parameters (mass fraction C (kg kg-1)
+FCLV	FCST	FCSO	FCRT	FCSTR
+0.419	0.431	0.487	0.431	0.444
+***Root parameters
+GZRT	ZRTMCW	ZRTMCD
+0.01	0.25	0.40
+***Drought stress parameters
+** leaf rolling kPa
+ULLS	LLLS ULDL LLDL
+74.13	794.33	630.95	1584.89
+** leaf expansion limit
+ULLE	LLLE	ULRT	LLRT
+50.	260.	74.13	1584.89
+***Nitrogen parameters
+NMAXUP	RFNLV	FNTRT	RFNST	TCNTRF	NFLVI	FNLVI	NMAXSO
+8.	0.04	0.15	0.015	10.	0.5	0.025	0.0175
+
+***Tables of responses as function of development
+**NFLVTB - N fraction in leaves on leaf area bases
+**VCMAXB; JMAXB; g0; g1; TPUB
+**FSHTB - fraction of dm partitioned to shoot
+**FLVRB - fraction of shoot dm partitioned to leaves
+**FSTTB - fraction of shoot dm to stems
+**FSOTB - fraction of shoot dm to panicles
+**DRLVT - leaf death coeff versus develoment
+
+**NMINSOT - min N concentration in storage organs
+**NMAXSOT - max leaf N fraction on weight basis as function of developmental age
+**NMINLT - min leaf N fracton on weight bases
+**NSLLVT - N stress on leaf death rate
+
+[SoilRoot]
+*** WATER UPTAKE PARAMETER INFORMATION **************************
+RRRM       RRRY    RVRL
+166.700000    31.300000     0.730000      
+ ALPM    ALPY     RTWL    RtMinWtPerUnitArea
+0.35000000    0.04000000    0.00010600    0.00020000    
+[RootDiff]
+*** ROOT MOVER PARAMETER INFORMATION **************************
+EPSI        lUpW             CourMax
+1.000000      1.000000      1.000000      
+Diffusivity and geotropic velocity
+0.500000      0.500000      0.500000      
+[SoilNitrogen]
+*** NITROGEN ROOT UPTAKE PARAMETER INFORMATION **************************
+ISINK    Rroot         
+1.000000      0.017000      
+ConstI   Constk     Cmin0 
+35.000000     0.500000      0.010000      
+17.300000     0.750000      0.030000      
+[Gas_Exchange Species Parameters] 
+**** for photosynthesis calculations ***
+EaVp    EaVc    Eaj     Hj      Sj     Vpm25   Vcm25    Jm25    Rd25    Ear       g0    g1
+75100   55900   32800   220000  702.6   70      50       300    2       39800   0.017   4.53
+*** Second set of parameters for Photosynthesis ****
+f (spec_correct)     scatt  Kc25    Ko25    Kp25    gbs         gi      gamma1
+0.15                 0.15   650      450    80      0.003       1       0.193
+**** Third set of photosynthesis parameters ****
+Gamma_gsw  sensitivity (sf) Reference_Potential_(phyla, bars) stomaRatio widthFact lfWidth (m)
+  10.0        2.3               -1.2                             1.0        0.72   0.050
+**** Secondary parameters for miscelanious equations ****
+internal_CO2_Ratio   SC_param      BLC_param
+0.7                   1.57           1.36

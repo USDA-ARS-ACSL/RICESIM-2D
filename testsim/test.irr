@@ -1,0 +1,30 @@
+*** Script for rice irrigation *** **TODO IMPLEMENT DIFFERRENT SWITIR OPTIONS AS SET IN THE *.INI FILE
+Sprinkler irrigation (for SWITIR option = 1)
+Average Irrigation rate (cm/hour)
+ 1
+Number of irrigation applications
+ 3
+Date		AmtIrrAppl	(mm/day)
+'05/20/2020'	50
+'06/10/2020'	50
+'07/20/2020'	50
+
+
+** If SWITIR = 2-5, supply amount of irrigation IRRI (mm) 
+IRRI   = 75. ! Irrigation gift (mm)
+
+** If SWITIR = 2, supply minimum standing water depth WL0MIN (mm)
+** below which irrigation water is applied
+WL0MIN = 10. ! Minimum standing water depth (mm)
+
+** If SWITIR = 3-4, supply minimum soil water potential KPAMIN (KPa)
+** (for SWITIR=3) or minimum soil water content WCMIN (-) (SWITIR=4)
+** below which irrigation water is applied, and the soil layer to
+** which this potential applies SLMIN (-)
+KPAMIN = 50.  ! Minimum soil water potential (Kpa)
+WCMIN  = 0.30 ! Minimum soil water content (-)
+SLMIN  = 4    ! Soil layer for which KPAMIN or WCMIN applies (-)
+
+** If SWITIR = 5, supply number of days after disappearence of
+** standing water (WL0DAY) at which irrigation water is applied
+WL0DAY = 0    ! number of days after disappearence of (-) INTEGER!!

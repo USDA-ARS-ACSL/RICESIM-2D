@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1715351519</timestamp>
+  <hostname>ARSMDBE34423275.usda.net</hostname>
+  <os>windows</os>
+  <product>Intel® VTune™ Profiler 2024.1.0</product>
+  <buildNumber type="s32_t">627630</buildNumber>
+  <logicalCPUCount type="s32_t">32</logicalCPUCount>
+  <physicalCoreCount type="s32_t">24</physicalCoreCount>
+  <processorPackageCount type="s32_t">1</processorPackageCount>
+  <CPUFrequency type="s64_t">3187000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">183</CPUModel>
+  <CPUStepping type="s32_t">1</CPUStepping>
+  <CPUBrandName>Intel(R) Core(TM) i9-14900KF</CPUBrandName>
+  <isa>avx2</isa>
+ </rdmgr>
+ <vs_search_dirs>
+  <searchDirs>
+   <searchCategory>
+    <category type="u8_t">1</category>
+    <searchDirectory>
+     <name>E:\RICESIM-2D\RICESIM-2D\soil</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">2</category>
+    <searchDirectory>
+     <name>E:\RICESIM-2D\RICESIM-2D</name>
+     <recursive type="bool">true</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">3</category>
+    <searchDirectory>
+     <name>E:\RICESIM-2D\RICESIM-2D\soil</name>
+     <recursive type="bool">true</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">4</category>
+   </searchCategory>
+  </searchDirs>
+ </vs_search_dirs>
+</root>

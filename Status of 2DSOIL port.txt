@@ -1,0 +1,15 @@
+Current version reflects integration of modified ORYZA (RICESIM-ORYZA) into 2DSOIL.
+
+Model executes but is incomplete with multiple known issues that still need to be addressed before ground-truthing can take place.
+
+General procedures has been to rewrite modified ORYZA while keeping analogous variables in the 2DSOIL crop model format similar to 2D GLYCIM and 2 GOSSYM
+
+2DSOIL and Crop components are coded in Fortran.  Gas exchange uses c++.
+
+Documents folder contains files denoting current progress and mapping of variables. Most methods have been ported over but a number of issues need to be addressed as documented in the 'Routine description' tab in the 'Master variable list...xlsx' spreadsheet
+
+
+
+
+
+
