@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{D5103272-773C-F742-D9AB-B46B785FD4C0}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/>
+	</Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Debug|x64" UseCompiler="ifxCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" PreprocessorDefinitions="_DEBUG" WarnInterfaces="true" LocalSavedScalarsZero="true" InitArrays="true" CallingConvention="callConventionCVF" Traceback="true" NullPointerCheck="true" BoundsCheck="true" ArrayShapeCheck="true" UninitializedVariablesCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+			<Tool Name="VFLinkerTool" Version="0.8" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="&quot;$(SolutionDir)crop source\$(PlatformName)\$(ConfigurationName)\Ricesim.lib&quot;"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|Win32" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|x64" UseCompiler="ifxCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd;h;inc">
+			<File RelativePath=".\NITVAR.INS">
+				<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true">
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\public.ins">
+			</File>
+			<File RelativePath=".\PUPLANT.INS">
+				<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true">
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\PuSurface.ins">
+				<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true">
+				</FileConfiguration>
+			</File>
+			<File RelativePath=".\PUWEATH.INS">
+				<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true">
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+			<File RelativePath=".\2DRICESIM.FOR">
+			</File>
+			<File RelativePath=".\AutoIrrigate.for">
+			</File>
+			<File RelativePath=".\carbon_partitioning.FOR">
+			</File>
+			<File RelativePath=".\dateFunctions.for">
+			</File>
+			<File RelativePath=".\Drip.FOR">
+			</File>
+			<File RelativePath=".\ERRMES.FOR">
+			</File>
+			<File RelativePath=".\Ex14-5.for">
+			</File>
+			<File RelativePath=".\GasMov.For">
+			</File>
+			<File RelativePath=".\GRID_BND.FOR">
+			</File>
+			<File RelativePath=".\HEATMOV.FOR">
+			</File>
+			<File RelativePath=".\HourlyOut.for">
+			</File>
+			<File RelativePath=".\hourwea.for">
+			</File>
+			<File RelativePath=".\Init.for">
+			</File>
+			<File RelativePath=".\Irrigation.for">
+			</File>
+			<File RelativePath=".\MNGMB.FOR">
+			</File>
+			<File RelativePath=".\Mulch_Decomp.for">
+			</File>
+			<File RelativePath=".\N_Massbl.for">
+			</File>
+			<File RelativePath=".\ORTHOFEM.FOR">
+			</File>
+			<File RelativePath=".\OUTPUT.FOR">
+			</File>
+			<File RelativePath=".\root_diff_new.for">
+			</File>
+			<File RelativePath=".\root_grow_c.FOR">
+			</File>
+			<File RelativePath=".\SetBoundary.for">
+			</File>
+			<File RelativePath=".\SETMAT01.FOR">
+			</File>
+			<File RelativePath=".\SetMatMulch.for">
+			</File>
+			<File RelativePath=".\SETSUR02.FOR">
+			</File>
+			<File RelativePath=".\SETTDB.FOR">
+			</File>
+			<File RelativePath=".\soilnden.for">
+			</File>
+			<File RelativePath=".\solmov.for">
+			</File>
+			<File RelativePath=".\solupt_Y1.for">
+			</File>
+			<File RelativePath=".\SurfaceMulchProcess.for">
+			</File>
+			<File RelativePath=".\surfaceWaterBalanceAdjustment.for">
+			</File>
+			<File RelativePath=".\SYNCHRON.FOR">
+			</File>
+			<File RelativePath=".\Tillage.for">
+			</File>
+			<File RelativePath=".\wateruptake.FOR">
+			</File>
+			<File RelativePath=".\Watmov.for">
+			</File>
+		</Filter>
+	</Files>
+	<Globals/>
+</VisualStudioProject>
