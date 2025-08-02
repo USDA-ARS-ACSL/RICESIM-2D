@@ -6,7 +6,7 @@
 *						 Release 3.0.0							     *
 *||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*
 	
-      !DEC$ ATTRIBUTES DLLIMPORT:: Crop 
+      !DEC$ ATTRIBUTES DLLIMPORT:: MyCrop 
       Include 'public.ins'
       include 'puplant.ins'
 	Include 'puweath.ins'
@@ -47,7 +47,7 @@ c	Call Drip()
       !Call CROP(PCRL,MSW1, NumNP,NumSol,Sink(1),
    !  !      !NumBP,TNext(1),NumMod,Starter)
 ccc wsun here to call Glycim crop subrountine as a dll
-	Call crop()     
+	Call Mycrop()     
 	Call Carbon_Partitioning()   
       Call Rootgrow()
       call Root_Mover()

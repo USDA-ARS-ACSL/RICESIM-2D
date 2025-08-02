@@ -77,6 +77,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(Configuration)\</OutDir>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -122,12 +125,16 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)\$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>echo f | xcopy /y "$(TargetPath)" "$(SolutionDir)soil source\$(Platformname)\$(ConfigurationName)\$(TargetFileName)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -150,7 +157,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="controller.h" />
-    <ClInclude Include="crop.h" />
+    <ClInclude Include="crop_gas.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gas exchange new.h" />
     <ClInclude Include="initInfo.h" />
@@ -161,7 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Controller.cpp" />
-    <ClCompile Include="crop.cpp" />
+    <ClCompile Include="crop_gas.cpp" />
     <ClCompile Include="gas exchange new.cpp" />
     <ClCompile Include="initInfo.cpp" />
     <ClCompile Include="pch.cpp">

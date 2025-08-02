@@ -258,6 +258,7 @@ Test_Ver9.1/2dsoil.exe
 2dmaizsim.exe
 maizsim.dll
 /Soil Source/CopyToFOlder.bat
+X64/
 
 /Crop source/$tf1/*
 /Soil Source/2dsoil.u2d
