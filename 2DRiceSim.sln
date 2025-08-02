@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "2DRicesim", "Soil Source\2DRicesim.vfproj", "{D5103272-773C-F742-D9AB-B46B785FD4C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D62E050-C510-42EE-A65E-947D619E143B} = {1D62E050-C510-42EE-A65E-947D619E143B}
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943} = {D4E1053A-DF59-4483-BA61-B6DFE455D943}
+	EndProjectSection
+EndProject
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Ricesim", "Crop Source\Ricesim.vfproj", "{1D62E050-C510-42EE-A65E-947D619E143B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943} = {D4E1053A-DF59-4483-BA61-B6DFE455D943}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gas_exchange", "gas_exchange\gas_exchange.vcxproj", "{D4E1053A-DF59-4483-BA61-B6DFE455D943}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Debug|x64.ActiveCfg = Debug|x64
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Debug|x64.Build.0 = Debug|x64
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Debug|x86.ActiveCfg = Debug|Win32
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Debug|x86.Build.0 = Debug|Win32
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Release|x64.ActiveCfg = Release|x64
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Release|x64.Build.0 = Release|x64
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Release|x86.ActiveCfg = Release|Win32
+		{D5103272-773C-F742-D9AB-B46B785FD4C0}.Release|x86.Build.0 = Release|Win32
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Debug|x64.ActiveCfg = Debug|x64
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Debug|x64.Build.0 = Debug|x64
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Debug|x86.Build.0 = Debug|Win32
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Release|x64.ActiveCfg = Release|x64
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Release|x64.Build.0 = Release|x64
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Release|x86.ActiveCfg = Release|Win32
+		{1D62E050-C510-42EE-A65E-947D619E143B}.Release|x86.Build.0 = Release|Win32
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Debug|x64.ActiveCfg = Debug|x64
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Debug|x64.Build.0 = Debug|x64
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Debug|x86.ActiveCfg = Debug|Win32
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Debug|x86.Build.0 = Debug|Win32
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Release|x64.ActiveCfg = Release|x64
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Release|x64.Build.0 = Release|x64
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Release|x86.ActiveCfg = Release|Win32
+		{D4E1053A-DF59-4483-BA61-B6DFE455D943}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03548835-8519-4013-B87E-44A963ECA001}
+	EndGlobalSection
+EndGlobal
